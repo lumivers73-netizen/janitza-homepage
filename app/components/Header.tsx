@@ -109,11 +109,11 @@ export default function Header() {
               <li key={item.label}>
                 <a
                   href={item.href}
-                  className="nav-link flex items-center gap-1 px-5 h-[50px] text-[1rem] font-semibold text-[#5c5b5b] hover:text-black transition-colors whitespace-nowrap"
+                  className="nav-link flex items-center gap-1 px-5 h-[50px] text-[1rem] font-semibold text-black hover:text-black transition-colors whitespace-nowrap"
                 >
                   {item.label}
                   {item.hasDropdown && (
-                    <IconCaretDownFilled size={10} className="text-[#5c5b5b] mt-0.5" />
+                    <IconCaretDownFilled size={10} className="text-black mt-0.5" />
                   )}
                 </a>
               </li>
