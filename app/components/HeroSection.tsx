@@ -1,5 +1,8 @@
+"use client";
+
 import { IconCaretRightFilled } from "@tabler/icons-react";
 import Image from "next/image";
+import { useState } from "react";
 
 const categories = [
   { title: "Energetické Analyzátory",     desc: "Přesné měření spotřeby a výkonu pro optimalizaci nákladů",   emoji: "⚡", image: "/Energetické Analyzátory.png" },
@@ -13,6 +16,8 @@ const categories = [
 ];
 
 export default function HeroSection() {
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+
   return (
     <section className="bg-white pt-12 pb-24">
       <div className="max-w-[1320px] mx-auto px-6">
@@ -31,11 +36,17 @@ export default function HeroSection() {
             <a
               key={cat.title}
               href="#"
-              className="product-card group flex flex-col rounded-lg overflow-hidden bg-[#f5f7f7]"
+              onClick={(e) => {
+                e.preventDefault();
+                setSelectedCategory(selectedCategory === cat.title ? null : cat.title);
+              }}
+              className="product-card group flex flex-col rounded-lg overflow-hidden bg-[#f5f7f7] cursor-pointer"
             >
               {/* Text nahoře – roztáhne se */}
               <div className="flex-1 p-6 pb-5 text-center flex flex-col justify-between">
-                <h3 className="text-[1.25rem] font-normal text-[#000000] leading-[1.3] mb-3 group-hover:text-[#004B87] transition-colors duration-300">
+                <h3 className={`text-[1.25rem] font-normal leading-[1.3] mb-3 transition-colors duration-300 ${
+                  selectedCategory === cat.title ? 'text-[#004B87]' : 'text-[#000000]'
+                }`}>
                   {cat.title}
                 </h3>
                 <p className="text-[0.875rem] text-[#5c5b5b] leading-[1.375] mb-4">{cat.desc}</p>
