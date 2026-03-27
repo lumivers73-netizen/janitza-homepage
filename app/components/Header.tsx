@@ -117,7 +117,7 @@ export default function Header() {
                     setSelectedNav(selectedNav === item.label ? null : item.label);
                   }}
                   className={`nav-link flex items-center gap-1 px-5 h-[50px] text-[1rem] font-semibold transition-colors whitespace-nowrap cursor-pointer ${
-                    selectedNav === item.label ? 'text-[#1588C8]' : 'text-black'
+                    selectedNav === item.label ? 'active text-[#1588C8]' : 'text-black'
                   }`}
                 >
                   {item.label}

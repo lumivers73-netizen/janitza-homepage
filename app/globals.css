@@ -129,3 +129,7 @@ body {
   left: 0;
   right: 0;
 }
+.nav-link.active::after {
+  left: 0;
+  right: 0;
+}
