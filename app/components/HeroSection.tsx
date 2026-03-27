@@ -20,8 +20,8 @@ export default function HeroSection() {
         {/* Dvouúrovňový nadpis – label černý, 14px, 2px tracking */}
         <div className="mb-10 text-center">
           <span className="section-label" style={{ textAlign: "center" }}>Produktové kategorie</span>
-          <h1 className="text-[2rem] lg:text-[2.25rem] font-normal text-[#1488c9] leading-[1.111]">
-            Profesionální měření a management elektrické energie
+          <h1 className="text-[2rem] lg:text-[2.25rem] font-normal leading-[1.111]">
+            Profesionální <span style={{ color: '#004080' }}>měření</span> <span style={{ color: '#006bb3' }}>a</span> <span style={{ color: '#0080d0' }}>management</span> <span style={{ color: '#0066cc' }}>elektrické</span> <span style={{ color: '#1a5fa3' }}>energie</span>
           </h1>
         </div>
 
