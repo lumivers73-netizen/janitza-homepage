@@ -35,7 +35,7 @@ export default function HeroSection() {
             >
               {/* Text nahoře – roztáhne se */}
               <div className="flex-1 p-6 pb-5 text-center flex flex-col justify-between">
-                <h3 className="text-[1.25rem] font-normal text-[#000000] leading-[1.3] mb-3">
+                <h3 className="text-[1.25rem] font-normal text-[#000000] leading-[1.3] mb-3 group-hover:text-[#004B87] transition-colors duration-300">
                   {cat.title}
                 </h3>
                 <p className="text-[0.875rem] text-[#5c5b5b] leading-[1.375] mb-4">{cat.desc}</p>
