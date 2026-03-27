@@ -39,7 +39,7 @@ export default function HeroSection() {
                   {cat.title}
                 </h3>
                 <p className="text-[0.875rem] text-[#5c5b5b] leading-[1.375] mb-4">{cat.desc}</p>
-                <span className="text-[#1488c9] font-semibold text-[0.875rem]">
+                <span className="text-[#004B87] font-semibold text-[0.875rem]">
                   Více informací
                 </span>
               </div>
