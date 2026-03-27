@@ -25,7 +25,7 @@ export default function HeroSection() {
         {/* Dvouúrovňový nadpis – label černý, 14px, 2px tracking */}
         <div className="mb-10 text-center">
           <span className="section-label" style={{ textAlign: "center" }}>Produktové kategorie</span>
-          <h1 className="text-[2rem] lg:text-[2.25rem] font-normal leading-[1.111]" style={{ color: '#004B87' }}>
+          <h1 className="text-[2rem] lg:text-[2.25rem] font-normal leading-[1.111]" style={{ color: '#1588C8' }}>
             Profesionální měření a management elektrické energie
           </h1>
         </div>
@@ -45,12 +45,12 @@ export default function HeroSection() {
               {/* Text nahoře – roztáhne se */}
               <div className="flex-1 p-6 pb-5 text-center flex flex-col justify-between">
                 <h3 className={`text-[1.25rem] font-normal leading-[1.3] mb-3 transition-colors duration-300 ${
-                  selectedCategory === cat.title ? 'text-[#004B87]' : 'text-[#000000]'
+                  selectedCategory === cat.title ? 'text-[#1588C8]' : 'text-[#000000]'
                 }`}>
                   {cat.title}
                 </h3>
                 <p className="text-[0.875rem] text-[#5c5b5b] leading-[1.375] mb-4">{cat.desc}</p>
-                <span className="text-[#004B87] font-semibold text-[0.875rem]">
+                <span className="text-[#1588C8] font-semibold text-[0.875rem]">
                   Více informací
                 </span>
               </div>

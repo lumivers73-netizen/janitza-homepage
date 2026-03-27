@@ -61,7 +61,7 @@ export default function IndustriesSection() {
                   <p className="text-[0.75rem] font-semibold uppercase tracking-[2px] text-[#5c5b5b] mb-3">
                     {ind.label}
                   </p>
-                  <h3 className="text-[1.25rem] font-normal text-black leading-[1.3] mb-5 group-hover:text-[#335EEC] transition-colors">
+                  <h3 className="text-[1.25rem] font-normal text-black leading-[1.3] mb-5 group-hover:text-[#1588C8] transition-colors">
                     {ind.title}
                   </h3>
                 </div>
