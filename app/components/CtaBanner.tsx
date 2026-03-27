@@ -3,7 +3,7 @@ import { IconCaretRightFilled } from "@tabler/icons-react";
 
 export default function CtaBanner() {
   return (
-    <section className="bg-[#f5f7f7] py-24 overflow-hidden">
+    <section className="bg-[#f5f7f7] py-12 overflow-hidden">
       <div className="max-w-[1320px] mx-auto px-6">
         <div className="flex items-center gap-16">
 

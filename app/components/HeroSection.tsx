@@ -19,7 +19,7 @@ export default function HeroSection() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
   return (
-    <section className="bg-white pt-12 pb-24">
+    <section className="bg-white pt-6 pb-12">
       <div className="max-w-[1320px] mx-auto px-6">
 
         {/* Dvouúrovňový nadpis – label černý, 14px, 2px tracking */}

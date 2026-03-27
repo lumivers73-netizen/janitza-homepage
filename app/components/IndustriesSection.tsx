@@ -25,7 +25,7 @@ const industries = [
 
 export default function IndustriesSection() {
   return (
-    <section className="bg-white py-24">
+    <section className="bg-white py-12">
       <div className="max-w-[1320px] mx-auto px-6">
 
         {/* Centrovaný nadpis */}

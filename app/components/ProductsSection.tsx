@@ -10,7 +10,7 @@ const products = [
 
 export default function ProductsSection() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-12 bg-white">
       <div className="max-w-[1320px] mx-auto px-6">
 
         <div className="mb-10 text-center">
