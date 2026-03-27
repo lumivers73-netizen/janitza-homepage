@@ -56,7 +56,7 @@ export default function HeroSection() {
                     alt={cat.title}
                     width={468}
                     height={274}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                 ) : (
                   <span className="text-5xl opacity-20 group-hover:scale-110 transition-transform duration-300">
