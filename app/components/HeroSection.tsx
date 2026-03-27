@@ -31,10 +31,10 @@ export default function HeroSection() {
             <a
               key={cat.title}
               href="#"
-              className="product-card group flex flex-col rounded-lg overflow-hidden bg-[#f5f7f7]"
+              className="product-card group flex flex-col rounded-lg overflow-hidden bg-[#f5f7f7] relative"
             >
               {/* Text nahoře – roztáhne se */}
-              <div className="flex-1 p-6 pb-5 text-center flex flex-col justify-between">
+              <div className="flex-1 p-6 pb-5 text-center flex flex-col justify-between relative z-10">
                 <h3 className="text-[1.25rem] font-normal text-black leading-[1.3] mb-3 group-hover:text-[#1488c9] transition-colors">
                   {cat.title}
                 </h3>
@@ -44,10 +44,10 @@ export default function HeroSection() {
                 </span>
               </div>
 
-              {/* Obrázek dole – přilepený */}
-              <div className="h-72 flex-shrink-0 flex items-center justify-center overflow-hidden relative bg-[#e4e8eb]">
+              {/* Obrázek dole – absolutní na celou hranu */}
+              <div className="absolute bottom-0 left-0 right-0 h-72 flex items-center justify-center overflow-hidden bg-[#e4e8eb]">
                 {/* Trojúhelník překrývající horní okraj fotky */}
-                <svg viewBox="0 0 50 24" preserveAspectRatio="none" style={{ position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', width: '50px', height: '20px', fill: '#f5f7f7', zIndex: 10 }}>
+                <svg viewBox="0 0 50 24" preserveAspectRatio="none" style={{ position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', width: '100%', height: '20px', fill: '#f5f7f7', zIndex: 10 }}>
                   <polygon points="0,0 50,0 25,20" />
                 </svg>
                 {cat.image ? (
