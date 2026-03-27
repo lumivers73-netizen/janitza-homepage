@@ -54,8 +54,8 @@ export default function HeroSection() {
                   <Image
                     src={cat.image}
                     alt={cat.title}
-                    width={360}
-                    height={211}
+                    width={468}
+                    height={274}
                     className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                   />
                 ) : (
