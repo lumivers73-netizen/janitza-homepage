@@ -81,7 +81,7 @@ export default function HeroSection() {
 
         <div className="mt-10 flex justify-center">
           <a href="#" className="link-arrow">
-            Prohlédnout všechna řešení
+            Prohlédnout všechny kategorie
             <IconCaretRightFilled size={16} stroke={2.5} />
           </a>
         </div>
