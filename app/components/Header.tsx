@@ -10,6 +10,7 @@ import {
   IconMessageCircle,
 } from "@tabler/icons-react";
 import Image from "next/image";
+import { useState } from "react";
 
 const navItems = [
   { label: "Výprodej", href: "#" },
@@ -22,6 +23,8 @@ const navItems = [
 ];
 
 export default function Header() {
+  const [selectedNav, setSelectedNav] = useState<string | null>(null);
+
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       {/* Top bar */}
@@ -109,11 +112,17 @@ export default function Header() {
               <li key={item.label}>
                 <a
                   href={item.href}
-                  className="nav-link flex items-center gap-1 px-5 h-[50px] text-[1rem] font-semibold text-black hover:text-black transition-colors whitespace-nowrap"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setSelectedNav(selectedNav === item.label ? null : item.label);
+                  }}
+                  className={`nav-link flex items-center gap-1 px-5 h-[50px] text-[1rem] font-semibold transition-colors whitespace-nowrap cursor-pointer ${
+                    selectedNav === item.label ? 'text-[#335EEC]' : 'text-black'
+                  }`}
                 >
                   {item.label}
                   {item.hasDropdown && (
-                    <IconCaretDownFilled size={10} className="text-black mt-0.5" />
+                    <IconCaretDownFilled size={10} className={`${selectedNav === item.label ? 'text-[#335EEC]' : 'text-black'} mt-0.5`} />
                   )}
                 </a>
               </li>
