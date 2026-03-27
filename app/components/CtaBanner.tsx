@@ -25,7 +25,7 @@ export default function CtaBanner() {
               </a>
               <a
                 href="#"
-                className="inline-flex items-center gap-2 px-4 h-[48px] font-semibold text-[1rem] border border-[#1488c9] text-[#1488c9] rounded-[3px] hover:bg-[#1488c9] hover:text-white transition-colors"
+                className="inline-flex items-center gap-2 px-4 h-[48px] font-semibold text-[1rem] border border-[#335EEC] text-[#335EEC] rounded-[3px] hover:bg-[#335EEC] hover:text-white transition-colors"
               >
                 Naplánovat demo <IconCaretRightFilled size={18} stroke={2} />
               </a>
