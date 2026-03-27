@@ -45,7 +45,7 @@ export default function HeroSection() {
               </div>
 
               {/* Obrázek dole – přilepený */}
-              <div className="h-44 flex-shrink-0 flex items-center justify-center overflow-hidden relative bg-[#e4e8eb]">
+              <div className="h-72 flex-shrink-0 flex items-center justify-center overflow-hidden relative bg-[#e4e8eb]">
                 {/* Trojúhelník překrývající horní okraj fotky */}
                 <svg viewBox="0 0 50 24" preserveAspectRatio="none" style={{ position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', width: '50px', height: '20px', fill: '#f5f7f7', zIndex: 10 }}>
                   <polygon points="0,0 50,0 25,20" />
