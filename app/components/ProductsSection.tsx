@@ -48,8 +48,7 @@ export default function ProductsSection() {
                   <span className="text-[1rem] font-semibold text-[#1488c9] whitespace-nowrap">
                     {product.price}
                   </span>
-                  <button className="btn-primary !h-9 !text-[0.875rem] !px-3 !gap-1 flex-shrink-0">
-                    <IconShoppingCart size={14} stroke={1.5} />
+                  <button className="btn-primary !h-9 !text-[0.875rem] !px-3 flex-shrink-0">
                     Do košíku
                   </button>
                 </div>
