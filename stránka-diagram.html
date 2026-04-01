@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janitza Homepage - Struktura Stránky</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        .title {
+            background: linear-gradient(135deg, #1588C8 0%, #0f5aa8 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .diagram {
+            padding: 40px;
+            background: #f9f9f9;
+        }
+        .section {
+            margin-bottom: 20px;
+            border-left: 5px solid;
+            padding-left: 20px;
+            position: relative;
+        }
+        .section::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 0;
+            width: 15px;
+            height: 15px;
+            background: white;
+            border: 3px solid;
+            border-radius: 50%;
+        }
+        .section-header {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-content {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+        .number {
+            display: inline-block;
+            background: #1588C8;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 24px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        /* Jednotlivé barvy sekcí */
+        .s1 { border-color: #FF6B6B; }
+        .s1 .number { background: #FF6B6B; }
+        .s1::before { border-color: #FF6B6B; }
+
+        .s2 { border-color: #4ECDC4; }
+        .s2 .number { background: #4ECDC4; }
+        .s2::before { border-color: #4ECDC4; }
+
+        .s3 { border-color: #FFE66D; }
+        .s3 .number { background: #FFE66D; color: #333; }
+        .s3::before { border-color: #FFE66D; }
+
+        .s4 { border-color: #95E1D3; }
+        .s4 .number { background: #95E1D3; color: #333; }
+        .s4::before { border-color: #95E1D3; }
+
+        .s5 { border-color: #F38181; }
+        .s5 .number { background: #F38181; }
+        .s5::before { border-color: #F38181; }
+
+        .s6 { border-color: #AA96DA; }
+        .s6 .number { background: #AA96DA; }
+        .s6::before { border-color: #AA96DA; }
+
+        .s7 { border-color: #FCBAD3; }
+        .s7 .number { background: #FCBAD3; color: #333; }
+        .s7::before { border-color: #FCBAD3; }
+
+        .details {
+            margin-left: 35px;
+            margin-top: 8px;
+            font-size: 13px;
+            color: #777;
+        }
+        .detail-item {
+            padding: 5px 0;
+            border-bottom: 1px dotted #ddd;
+        }
+        .detail-item:last-child {
+            border-bottom: none;
+        }
+        .emoji {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            📱 Janitza Homepage - Struktura Stránky
+        </div>
+
+        <div class="diagram">
+            <!-- 1. HEADER -->
+            <div class="section s1">
+                <div class="section-header">
+                    <span class="number">1</span>
+                    <span>🏠 HEADER (Horní lišta)</span>
+                </div>
+                <div class="section-content">
+                    Navigace, logo, vyhledávání, kontakt
+                </div>
+                <div class="details">
+                    <div class="detail-item">📍 Logo Janitza</div>
+                    <div class="detail-item">🔍 Vyhledávání</div>
+                    <div class="detail-item">📞 Telefon: +420 777 730 002</div>
+                    <div class="detail-item">💬 Online chat</div>
+                    <div class="detail-item">🛒 Ikony (Porovnání, Oblíbené, Účet, Košík)</div>
+                    <div class="detail-item">📋 Menu: Výprodej, Kompenzace, Komponenty, UMG, MTP, Rozvaděče, Služby</div>
+                </div>
+            </div>
+
+            <!-- 2. HERO SECTION -->
+            <div class="section s2">
+                <div class="section-header">
+                    <span class="number">2</span>
+                    <span>⭐ HERO SECTION (Produktové kategorie)</span>
+                </div>
+                <div class="section-content">
+                    Hlavní nadpis + 8 karet v gridu (4×2)
+                </div>
+                <div class="details">
+                    <div class="detail-item">✨ Nadpis: "Profesionální měření a management elektrické energie" (modrý)</div>
+                    <div class="detail-item">1️⃣ Energetické Analyzátory</div>
+                    <div class="detail-item">2️⃣ Síťové analyzátory</div>
+                    <div class="detail-item">3️⃣ Analyzátory kvality sítě</div>
+                    <div class="detail-item">4️⃣ Monitorování rezid. proudů</div>
+                    <div class="detail-item">5️⃣ Měřicí transformátory</div>
+                    <div class="detail-item">6️⃣ Kompenzace účiníku</div>
+                    <div class="detail-item">7️⃣ GRIDVIS® software</div>
+                    <div class="detail-item">8️⃣ Servis a podpora</div>
+                    <div class="detail-item">➜ Odkaz: "Prohlédnout všechny kategorie"</div>
+                </div>
+            </div>
+
+            <!-- 3. TRUST BAR -->
+            <div class="section s3">
+                <div class="section-header">
+                    <span class="number">3</span>
+                    <span>✅ TRUST BAR (Věřyhodnost)</span>
+                </div>
+                <div class="section-content">
+                    4 sloupečky s výhodami společnosti
+                </div>
+                <div class="details">
+                    <div class="detail-item">📦 25+ let zkušeností v oboru</div>
+                    <div class="detail-item">👤 Odborné poradenství od specialistů</div>
+                    <div class="detail-item">🚚 Expedice do 24h z Pardubic</div>
+                    <div class="detail-item">🆘 Technická podpora v češtině</div>
+                </div>
+            </div>
+
+            <!-- 4. INDUSTRIES SECTION -->
+            <div class="section s4">
+                <div class="section-header">
+                    <span class="number">4</span>
+                    <span>🏭 INDUSTRIES SECTION (Odvětví)</span>
+                </div>
+                <div class="section-content">
+                    Prozkoumejte naše průmyslová řešení
+                </div>
+                <div class="details">
+                    <div class="detail-item">🖥️ Datová centra</div>
+                    <div class="detail-item">⚙️ Průmysl</div>
+                    <div class="detail-item">⚡ Energetika</div>
+                    <div class="detail-item">🏢 Budovy</div>
+                </div>
+            </div>
+
+            <!-- 5. FEATURED SOLUTIONS -->
+            <div class="section s5">
+                <div class="section-header">
+                    <span class="number">5</span>
+                    <span>💡 FEATURED SOLUTIONS (Osvědčená řešení)</span>
+                </div>
+                <div class="section-content">
+                    Osvědčená řešení pro měření, řízení a optimalizaci
+                </div>
+                <div class="details">
+                    <div class="detail-item">🔹 UMG 801 - Modulární síťový analyzátor</div>
+                    <div class="detail-item">🔹 Datová centra - Komplexní řešení</div>
+                    <div class="detail-item">🔹 UMG 800 - Kompaktní analyzátor</div>
+                    <div class="detail-item">🔹 GRIDVIS® Online - Cloudová platforma</div>
+                </div>
+            </div>
+
+            <!-- 6. PRODUCTS SECTION -->
+            <div class="section s6">
+                <div class="section-header">
+                    <span class="number">6</span>
+                    <span>🛍️ PRODUCTS SECTION (E-shop)</span>
+                </div>
+                <div class="section-content">
+                    Doporučené produkty s cenami
+                </div>
+                <div class="details">
+                    <div class="detail-item">💰 UMG 512-PRO - od 45 900 Kč</div>
+                    <div class="detail-item">💰 UMG 96RM-E - od 18 500 Kč</div>
+                    <div class="detail-item">💰 UMG 96-PQ-L-LP - od 22 900 Kč</div>
+                    <div class="detail-item">💰 VARTRON 25 kVAr - od 1 550 Kč</div>
+                    <div class="detail-item">🔘 Tlačítko: "Do košíku" u každého</div>
+                </div>
+            </div>
+
+            <!-- 7. CTA BANNER / GRIDVIS -->
+            <div class="section s7">
+                <div class="section-header">
+                    <span class="number">7</span>
+                    <span>📊 CTA BANNER (Gridvis Software)</span>
+                </div>
+                <div class="section-content">
+                    Analýza, vyhodnocení a dokumentace energetických dat
+                </div>
+                <div class="details">
+                    <div class="detail-item">📈 Vizualizace a analýza energetických dat</div>
+                    <div class="detail-item">🎯 Lokalizace energeticky náročných zařízení</div>
+                    <div class="detail-item">⚠️ Detekce poruch v rané fázi</div>
+                    <div class="detail-item">✔️ Plnění norem EN 50160 a ISO 50001</div>
+                    <div class="detail-item">🔘 Tlačítka: "Stáhnout zdarma" | "Naplánovat demo"</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
