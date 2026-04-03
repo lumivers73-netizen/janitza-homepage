@@ -3,7 +3,7 @@ import { IconCaretRightFilled } from "@tabler/icons-react";
 
 export default function CtaBanner() {
   return (
-    <section className="bg-[#f5f7f7] py-12 overflow-hidden">
+    <section className="bg-[#f5f7f7] py-14 overflow-hidden">
       <div className="max-w-[1320px] mx-auto px-6">
         <div className="flex items-center gap-16">
 
@@ -13,7 +13,7 @@ export default function CtaBanner() {
             <h2 className="text-[2rem] font-normal text-black leading-[1.111] mb-4">
               Analyzujte, vyhodnocujte<br />a dokumentujte energetická data
             </h2>
-            <p className="text-[1rem] text-[#5c5b5b] leading-[1.375] mb-8 max-w-lg">
+            <p className="text-[1rem] text-black leading-[1.375] mb-8 max-w-lg">
               S vizualizačním software Gridvis® lokalizujete energeticky náročné
               spotřebiče, detekujete poruchy v rané fázi a plníte zákonné
               požadavky i normy EN&nbsp;50160 a ISO&nbsp;50001.
@@ -25,7 +25,7 @@ export default function CtaBanner() {
               </a>
               <a
                 href="#"
-                className="inline-flex items-center gap-2 px-4 h-[48px] font-semibold text-[1rem] border border-[#1588C8] text-[#1588C8] rounded-[3px] hover:bg-[#1588C8] hover:text-white transition-colors"
+                className="inline-flex items-center gap-2 px-4 h-[48px] font-semibold text-[1rem] border border-[#0170E3] text-[#0170E3] rounded-[3px] hover:bg-[#0170E3] hover:text-white transition-colors"
               >
                 Naplánovat demo <IconCaretRightFilled size={18} stroke={2} />
               </a>

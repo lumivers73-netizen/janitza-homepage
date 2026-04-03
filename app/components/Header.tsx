@@ -44,7 +44,7 @@ export default function Header() {
 
           {/* Search – roztáhne se */}
           <div className="flex-1 min-w-0">
-            <div className="flex items-center border border-gray-200 rounded-[3px] px-3 py-2 gap-2 focus-within:border-[#1588C8] transition-colors max-w-md">
+            <div className="flex items-center border border-gray-200 rounded-[3px] px-3 py-2 gap-2 focus-within:border-[#0170E3] transition-colors max-w-md">
               <IconSearch size={16} stroke={1.5} className="text-[#9ca3af] flex-shrink-0" />
               <input
                 type="text"
@@ -56,14 +56,14 @@ export default function Header() {
 
           {/* Kontakt */}
           <a href="tel:+420777730002" className="flex-shrink-0 flex items-center gap-1.5 group">
-            <IconPhone size={14} stroke={1.5} className="text-[#131313] group-hover:text-[#1588C8] transition-colors" />
-            <span className="text-[13px] font-semibold text-[#131313] group-hover:text-[#1588C8] transition-colors whitespace-nowrap">
+            <IconPhone size={14} stroke={1.5} className="text-[#131313] group-hover:text-[#0170E3] transition-colors" />
+            <span className="text-[13px] font-semibold text-[#131313] group-hover:text-[#0170E3] transition-colors whitespace-nowrap">
               +420 777 730 002
             </span>
           </a>
           <a href="#" className="flex-shrink-0 flex items-center gap-1.5 group">
-            <IconMessageCircle size={14} stroke={1.5} className="text-[#131313] group-hover:text-[#1588C8] transition-colors" />
-            <span className="text-[13px] font-semibold text-[#131313] group-hover:text-[#1588C8] transition-colors whitespace-nowrap">
+            <IconMessageCircle size={14} stroke={1.5} className="text-[#131313] group-hover:text-[#0170E3] transition-colors" />
+            <span className="text-[13px] font-semibold text-[#131313] group-hover:text-[#0170E3] transition-colors whitespace-nowrap">
               Online chat
             </span>
           </a>
@@ -74,25 +74,25 @@ export default function Header() {
           {/* Ikony – jednotný stroke 1.5 */}
           <div className="flex items-center gap-2 flex-shrink-0">
             <button
-              className="p-1.5 text-[#5a6268] hover:text-[#1488c9] transition-colors rounded-sm hover:bg-gray-50"
+              className="p-1.5 text-[#5a6268] hover:text-[#0170E3] transition-colors rounded-sm hover:bg-gray-50"
               aria-label="Porovnat produkty"
             >
               <IconScale size={20} stroke={1.5} />
             </button>
             <button
-              className="p-1.5 text-[#5a6268] hover:text-[#1588C8] transition-colors rounded-sm hover:bg-gray-50"
+              className="p-1.5 text-[#5a6268] hover:text-[#0170E3] transition-colors rounded-sm hover:bg-gray-50"
               aria-label="Oblíbené"
             >
               <IconHeart size={20} stroke={1.5} />
             </button>
             <button
-              className="p-1.5 text-[#5a6268] hover:text-[#1588C8] transition-colors rounded-sm hover:bg-gray-50"
+              className="p-1.5 text-[#5a6268] hover:text-[#0170E3] transition-colors rounded-sm hover:bg-gray-50"
               aria-label="Účet"
             >
               <IconUser size={20} stroke={1.5} />
             </button>
             <button
-              className="relative p-1.5 text-white bg-[#1588C8] hover:bg-[#0f5aa8] transition-colors rounded-sm"
+              className="relative p-1.5 text-white bg-[#0170E3] hover:bg-[#0f5aa8] transition-colors rounded-sm"
               aria-label="Košík"
             >
               <IconShoppingCart size={20} stroke={1.5} />
@@ -117,12 +117,12 @@ export default function Header() {
                     setSelectedNav(selectedNav === item.label ? null : item.label);
                   }}
                   className={`nav-link flex items-center gap-1 px-5 h-[50px] text-[1rem] font-semibold transition-colors whitespace-nowrap cursor-pointer ${
-                    selectedNav === item.label ? 'active text-[#1588C8]' : 'text-black'
+                    selectedNav === item.label ? 'active text-[#0170E3]' : 'text-black'
                   }`}
                 >
                   {item.label}
                   {item.hasDropdown && (
-                    <IconCaretDownFilled size={10} className={`${selectedNav === item.label ? 'text-[#1588C8]' : 'text-black'} mt-0.5`} />
+                    <IconCaretDownFilled size={10} className={`${selectedNav === item.label ? 'text-[#0170E3]' : 'text-black'} mt-0.5`} />
                   )}
                 </a>
               </li>
