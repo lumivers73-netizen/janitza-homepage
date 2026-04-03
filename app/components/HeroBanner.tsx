@@ -14,7 +14,7 @@ export default function HeroBanner() {
         <div className="max-w-[640px]">
           {/* Headline */}
           <h1 className="text-[2rem] lg:text-[2.5rem] font-normal leading-[1.111] text-black mb-4">
-            Mějte spotřebu energie pod kontrolou
+            Vaše <span className="relative inline-block"><span className="relative z-10 font-semibold text-[#0170E3]">spotřeba</span><span className="absolute bottom-0 left-0 w-full h-[0.35em] bg-[#0170E3]/15 -z-0" /></span> energie <span className="relative inline-block"><span className="relative z-10 font-semibold text-[#0170E3]">pod kontrolou</span><span className="absolute bottom-0 left-0 w-full h-[0.35em] bg-[#0170E3]/20 -z-0" /></span>
             <span className="block text-[1.25rem] lg:text-[1.5rem] text-[#5c5b5b] font-normal mt-2">
               měření a management elektrické energie
             </span>

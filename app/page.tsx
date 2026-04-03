@@ -27,7 +27,7 @@ export default function Home() {
         <UtilityBar />
       </div>
 
-      <div data-section="2 – Header">
+      <div data-section="2 – Header" className="sticky top-0 z-50">
         <Header />
       </div>
 

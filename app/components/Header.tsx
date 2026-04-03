@@ -26,7 +26,7 @@ export default function Header() {
   const [selectedNav, setSelectedNav] = useState<string | null>(null);
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-white shadow-sm">
       {/* Top bar */}
       <div className="border-b border-gray-100">
         <div className="max-w-[1320px] mx-auto px-6 flex items-center h-[72px] gap-6">
