@@ -37,47 +37,54 @@ export default function FAQSection() {
     <section className="bg-[#f5f7f7] py-14">
       <div className="max-w-[1320px] mx-auto px-6">
         <div className="mb-12 text-center">
-          <span className="section-label" style={{ textAlign: "center" }}>FAQ</span>
           <h2 className="text-[2rem] font-normal text-black leading-[1.1] mt-1">
             Často kladené dotazy
           </h2>
         </div>
 
-        <div className="max-w-[800px] mx-auto">
-          {faqs.map((faq, i) => (
-            <div key={i} className="border-b border-gray-200">
-              <button
-                onClick={() => setOpen(open === i ? null : i)}
-                className="w-full flex items-center justify-between py-5 text-left group"
-              >
-                <span className={`text-[1rem] font-semibold leading-[1.4] transition-colors ${open === i ? "text-[#0170E3]" : "text-black group-hover:text-[#0170E3]"}`}>
-                  {faq.q}
-                </span>
-                <IconChevronDown
-                  size={20}
-                  stroke={2}
-                  className={`flex-shrink-0 ml-4 text-[#5c5b5b] transition-transform duration-200 ${open === i ? "rotate-180" : ""}`}
-                />
-              </button>
-              <div
-                className={`overflow-hidden transition-all duration-300 ${open === i ? "max-h-40 pb-5" : "max-h-0"}`}
-              >
-                <p className="text-[0.875rem] text-[#5c5b5b] leading-[1.6]">
-                  {faq.a}
-                </p>
-              </div>
+        <div className="grid grid-cols-2 gap-x-8">
+          {[faqs.slice(0, 3), faqs.slice(3)].map((column, ci) => (
+            <div key={ci}>
+              {column.map((faq, i) => {
+                const idx = ci * 3 + i;
+                return (
+                  <div key={idx} className="border-b border-gray-200">
+                    <button
+                      onClick={() => setOpen(open === idx ? null : idx)}
+                      className="w-full flex items-center justify-between py-5 text-left group"
+                    >
+                      <span className={`text-[1rem] font-semibold leading-[1.4] transition-colors ${open === idx ? "text-[#0170E3]" : "text-black group-hover:text-[#0170E3]"}`}>
+                        {faq.q}
+                      </span>
+                      <IconChevronDown
+                        size={20}
+                        stroke={2}
+                        className={`flex-shrink-0 ml-4 text-[#5c5b5b] transition-transform duration-200 ${open === idx ? "rotate-180" : ""}`}
+                      />
+                    </button>
+                    <div
+                      className={`overflow-hidden transition-all duration-300 ${open === idx ? "max-h-40 pb-5" : "max-h-0"}`}
+                    >
+                      <p className="text-[0.875rem] text-black leading-[1.6]">
+                        {faq.a}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           ))}
         </div>
 
-        <div className="mt-5 flex justify-center gap-6">
-          <a href="#" className="link-arrow">
+        <div className="mt-5 flex justify-start gap-3 flex-wrap">
+          <a href="#" className="inline-flex items-center justify-center px-5 py-2 bg-[#0170E3] hover:bg-[#0060C4] text-white text-[0.875rem] font-semibold rounded-[3px] transition-colors">
             Porovnávací tabulka produktů
-            <IconCaretRightFilled size={16} stroke={2.5} />
           </a>
-          <a href="#" className="link-arrow">
+          <a href="/dictionary" className="inline-flex items-center justify-center px-5 py-2 border border-[#0170E3] text-[#0170E3] text-[0.875rem] font-semibold rounded-[3px] hover:bg-[#0170E3] hover:text-white transition-colors">
             Vysvětlení pojmů
-            <IconCaretRightFilled size={16} stroke={2.5} />
+          </a>
+          <a href="#kontakt" className="inline-flex items-center justify-center px-5 py-2 bg-[#0170E3] hover:bg-[#0060C4] text-white text-[0.875rem] font-semibold rounded-[3px] transition-colors">
+            Zavolejte mi
           </a>
         </div>
       </div>

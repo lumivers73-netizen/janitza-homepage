@@ -28,7 +28,6 @@ export default function TechDocs() {
     <section className="bg-white py-14">
       <div className="max-w-[1320px] mx-auto px-6">
         <div className="mb-12 text-center">
-          <span className="section-label" style={{ textAlign: "center" }}>Dokumentace</span>
           <h2 className="text-[2rem] font-normal text-black leading-[1.1] mt-1">
             Technická dokumentace a podpora
           </h2>
@@ -55,9 +54,8 @@ export default function TechDocs() {
         </div>
 
         <div className="mt-5 flex justify-center">
-          <a href="#" className="link-arrow">
+          <a href="#" className="inline-flex items-center justify-center px-5 py-2 bg-[#0170E3] hover:bg-[#0060C4] text-white text-[0.875rem] font-semibold rounded-[3px] transition-colors">
             Zobrazit všechny dokumenty
-            <IconCaretRightFilled size={16} stroke={2.5} />
           </a>
         </div>
       </div>

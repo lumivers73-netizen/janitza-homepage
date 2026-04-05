@@ -8,6 +8,7 @@ const sectionColors: Record<string, string> = {
   "4 – Produktové kategorie": "#FFE66D",
   "4a – Trust Bar":           "#95E1D3",
   "5 – Odvětví":              "#F38181",
+  "5a – Normy":               "#E8D5B7",
   "6 – Promo bannery":        "#AA96DA",
   "7 – GridVis® Software":    "#FCBAD3",
   "8 – Doporučené produkty":  "#7EC8E3",
@@ -19,7 +20,10 @@ const sectionColors: Record<string, string> = {
   "14 – Kontakt":             "#98FB98",
   "15 – FAQ":                 "#FFB6C1",
   "16 – Partneři":            "#D2B48C",
-  "17 – Footer":              "#B0C4DE",
+  "17a – Rychlé kontakty":    "#4DA6FF",
+  "17b – Kontakty":           "#9FB4C7",
+  "18 – Mapa webu":           "#8FA4B7",
+  "19 – Copyright":           "#7F94A7",
 };
 
 export default function DebugOverlayA() {

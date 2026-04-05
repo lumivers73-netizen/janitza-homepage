@@ -6,25 +6,25 @@ import { useState } from "react";
 const guides = [
   {
     title: "Analyzátory – který je pro vás?",
-    desc: "Průvodce výběrem správného analyzátoru energie podle vašich požadavků a aplikace.",
+    desc: "Průvodce výběrem správného analyzátoru energie podle vašich požadavků, typu sítě a aplikace. Porovnání řad UMG a doporučení pro váš provoz.",
     productLink: "#kategorie",
     productLabel: "Analyzátory v e-shopu",
   },
   {
     title: "Kompenzace – kolik ušetříte?",
-    desc: "Návod jak správně navrhnout kompenzaci jalového výkonu pro váš provoz.",
+    desc: "Návod jak správně navrhnout kompenzaci jalového výkonu pro váš provoz. Kalkulačka úspor, dimenzování stupňů a volba regulátoru.",
     productLink: "#kategorie",
     productLabel: "Kompenzace v e-shopu",
   },
   {
     title: "Transformátory – jaký typ potřebujete?",
-    desc: "Přehled měřicích transformátorů proudu a napětí pro různé aplikace.",
+    desc: "Přehled měřicích transformátorů proudu a napětí pro různé aplikace. Dělitelné, násuvné a pevné MTP — jak vybrat správný typ a rozsah.",
     productLink: "#kategorie",
     productLabel: "Transformátory v e-shopu",
   },
   {
     title: "Software – co zvládne GridVis®?",
-    desc: "Porovnání softwarových platforem GridVis® pro vizualizaci a analýzu dat.",
+    desc: "Porovnání softwarových platforem GridVis® pro vizualizaci a analýzu dat. Desktop vs. cloud, licence, funkce a kompatibilita s přístroji.",
     productLink: "#kategorie",
     productLabel: "GridVis® v e-shopu",
   },
@@ -108,10 +108,10 @@ export default function ProductGuide() {
                       Vyžádat podporu
                     </a>
                   </div>
-                  <h3 className="text-[1.25rem] font-normal text-black leading-[1.3] mb-3 group-hover:text-[#0170E3] transition-colors">
+                  <h3 className="text-[1.25rem] font-normal text-black leading-[1.3] mb-3 group-hover:text-[#0170E3] transition-colors h-[3.25rem] overflow-hidden line-clamp-2">
                     {guide.title}
                   </h3>
-                  <p className="text-[0.875rem] text-black leading-[1.5] flex-1">
+                  <p className="text-[0.875rem] text-black leading-[1.5] h-[5.25rem] overflow-hidden line-clamp-4">
                     {guide.desc}
                   </p>
                 </div>

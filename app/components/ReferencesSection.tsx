@@ -1,6 +1,6 @@
 "use client";
 
-import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
+import { IconChevronLeft, IconChevronRight, IconCaretRightFilled } from "@tabler/icons-react";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -97,8 +97,8 @@ export default function ReferencesSection() {
                   <p className="text-[0.875rem] text-black leading-[1.5] flex-1">
                     {ref.desc}
                   </p>
-                  <span className="text-[#0170E3] font-semibold text-[0.875rem] mt-1">
-                    Zobrazit případovou studii
+                  <span className="text-[#0170E3] font-semibold text-[0.875rem] mt-1 inline-flex items-center gap-1">
+                    Zobrazit případovou studii <IconCaretRightFilled size={14} stroke={2} />
                   </span>
                 </a>
               ))}

@@ -43,11 +43,11 @@ export default function Home() {
         <TrustBar />
       </div>
 
-      <div data-section="5 – Odvětví">
+      <div data-section="5 – Odvětví" id="odvetvi">
         <IndustriesSection />
       </div>
 
-      <div data-section="5a – Normy">
+      <div data-section="5a – Normy" id="normy">
         <NormsBar />
       </div>
 
@@ -63,7 +63,7 @@ export default function Home() {
         <ProductsSection />
       </div>
 
-      <div data-section="9 – Reference">
+      <div data-section="9 – Reference" id="reference">
         <ReferencesSection />
       </div>
 
@@ -95,9 +95,7 @@ export default function Home() {
         <PartnersSection />
       </div>
 
-      <div data-section="17 – Footer">
-        <Footer />
-      </div>
+      <Footer />
 
       <FloatingElements />
       <DebugOverlayA />

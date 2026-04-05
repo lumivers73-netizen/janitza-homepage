@@ -7,28 +7,28 @@ const articles = [
   {
     date: "28. 3. 2026",
     title: "Nový analyzátor UMG 801 – modulární platforma pro budoucnost",
-    perex: "Představujeme novou generaci síťových analyzátorů s rozšiřitelnou architekturou a podporou IoT protokolů.",
+    perex: "Představujeme novou generaci síťových analyzátorů s rozšiřitelnou architekturou, podporou IoT protokolů a až 92 měřicími kanály v jednom přístroji. Ideální pro rostoucí provozy.",
     image: "/UMG 801.png",
     hoverText: "Zjistěte, jak modulární architektura UMG 801 šetří náklady na budoucí rozšíření a proč je ideální volbou pro rostoucí provozy.",
   },
   {
     date: "15. 3. 2026",
     title: "Jak správně kompenzovat jalový výkon v průmyslu",
-    perex: "Praktický průvodce návrhem kompenzačních rozvaděčů pro výrobní podniky s proměnlivým zatížením.",
+    perex: "Praktický průvodce návrhem kompenzačních rozvaděčů pro výrobní podniky s proměnlivým zatížením. Vysvětlíme jak dimenzovat, jaké regulátory zvolit a kolik ušetříte na penále.",
     image: "/Kompenzace účiniků.png",
     hoverText: "Naučte se vyhnout penále za jalovou energii a správně dimenzovat kompenzaci pro váš typ provozu. Včetně kalkulačky úspor.",
   },
   {
     date: "2. 3. 2026",
     title: "GridVis® 9.0 – nové funkce pro analýzu kvality energie",
-    perex: "Aktualizace přináší vylepšenou vizualizaci harmonických a automatické reporty dle EN 50160.",
+    perex: "Aktualizace přináší vylepšenou vizualizaci harmonických, automatické reporty dle EN 50160 a nové interaktivní dashboardy pro správu více měřicích bodů současně.",
     image: "/GRIDVIS software.png",
     hoverText: "Podívejte se, jak nové dashboardy a automatické reporty zjednoduší plnění legislativních požadavků a ušetří hodiny práce měsíčně.",
   },
   {
     date: "28. 3. 2026",
     title: "Nový analyzátor UMG 801 – modulární platforma pro budoucnost",
-    perex: "Představujeme novou generaci síťových analyzátorů s rozšiřitelnou architekturou a podporou IoT protokolů.",
+    perex: "Představujeme novou generaci síťových analyzátorů s rozšiřitelnou architekturou, podporou IoT protokolů a až 92 měřicími kanály v jednom přístroji. Ideální pro rostoucí provozy.",
     image: "/UMG 801.png",
     hoverText: "Zjistěte, jak modulární architektura UMG 801 šetří náklady na budoucí rozšíření a proč je ideální volbou pro rostoucí provozy.",
   },
@@ -116,11 +116,10 @@ export default function NewsSection() {
 
                   {/* Text dole */}
                   <div className="p-6 pb-5 flex flex-col flex-1 bg-[#f5f7f7] text-center">
-                    <span className="text-[0.75rem] text-black mb-2">{article.date}</span>
-                    <h3 className="text-[1.25rem] font-normal text-black leading-[1.3] mb-3 group-hover:text-[#0170E3] transition-colors">
+                    <h3 className="text-[1.25rem] font-normal text-black leading-[1.3] mb-3 group-hover:text-[#0170E3] transition-colors h-[3.25rem] overflow-hidden line-clamp-2">
                       {article.title}
                     </h3>
-                    <p className="text-[0.875rem] text-black leading-[1.375] flex-1 mb-4">
+                    <p className="text-[0.875rem] text-black leading-[1.375] mb-4 h-[5rem] overflow-hidden line-clamp-4">
                       {article.perex}
                     </p>
                     <span className="self-center inline-flex items-center justify-center px-3.5 py-1 bg-[#0170E3] hover:bg-[#0060C4] text-white text-[0.75rem] font-medium rounded-[3px] transition-colors">
