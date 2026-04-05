@@ -1,4 +1,3 @@
-import UtilityBar from "./components/UtilityBar";
 import Header from "./components/Header";
 import HeroBanner from "./components/HeroBanner";
 import TrustBar from "./components/TrustBar";
@@ -23,10 +22,6 @@ import DebugOverlayA from "./components/DebugOverlayA";
 export default function Home() {
   return (
     <main>
-      <div data-section="1 – Utility Bar">
-        <UtilityBar />
-      </div>
-
       <div data-section="2 – Header" className="sticky top-0 z-50">
         <Header />
       </div>
