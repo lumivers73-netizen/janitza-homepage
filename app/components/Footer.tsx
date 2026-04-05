@@ -11,15 +11,15 @@ export default function Footer() {
         <div className="relative z-10 max-w-[1320px] mx-auto px-6 py-8">
           <div className="flex justify-center gap-56">
             <div className="text-center">
-              <p className="text-[0.8125rem] text-white/60 uppercase tracking-[1px] mb-1">E-mail</p>
+              <p className="text-[0.8125rem] text-white/90 uppercase tracking-[1px] mb-1">E-mail</p>
               <a href="mailto:kbh@kbh.cz" className="text-[1.25rem] font-semibold text-white hover:text-white/80 transition-colors">kbh@kbh.cz</a>
             </div>
             <div className="text-center">
-              <p className="text-[0.8125rem] text-white/60 uppercase tracking-[1px] mb-1">Obchod</p>
+              <p className="text-[0.8125rem] text-white/90 uppercase tracking-[1px] mb-1">Obchod</p>
               <a href="tel:+420777730001" className="text-[1.25rem] font-semibold text-white hover:text-white/80 transition-colors">+420 777 730 001</a>
             </div>
             <div className="text-center">
-              <p className="text-[0.8125rem] text-white/60 uppercase tracking-[1px] mb-1">Expedice</p>
+              <p className="text-[0.8125rem] text-white/90 uppercase tracking-[1px] mb-1">Expedice</p>
               <a href="tel:+420777730002" className="text-[1.25rem] font-semibold text-white hover:text-white/80 transition-colors">+420 777 730 002</a>
             </div>
           </div>
@@ -34,7 +34,7 @@ export default function Footer() {
               <h4 className="text-[0.875rem] font-semibold uppercase tracking-[1px] mb-4 text-black">Kontakty</h4>
               <div className="text-[0.875rem] text-[#5c5b5b] leading-[1.8] space-y-1">
                 <p className="font-semibold text-black">KBH Energy a.s.</p>
-                <p>Pardubická 1777</p>
+                <p>Na Spravedlnosti 1533</p>
                 <p>530 02 Pardubice</p>
                 <p className="mt-2">Po – Pá: 7:00 – 14:30</p>
               </div>
@@ -47,10 +47,10 @@ export default function Footer() {
                   <a href="tel:+420777730002" className="text-[#0170E3] font-semibold hover:text-[#0f5aa8] transition-colors">+420 777 730 002</a>
                 </p>
                 <p>
-                  <a href="mailto:info@kbh.cz" className="text-[#0170E3] font-semibold hover:text-[#0f5aa8] transition-colors">info@kbh.cz</a>
+                  <a href="mailto:kbh@kbh.cz" className="text-[#0170E3] font-semibold hover:text-[#0f5aa8] transition-colors">kbh@kbh.cz</a>
                 </p>
-                <p className="mt-2">IČ: 25931474</p>
-                <p>DIČ: CZ25931474</p>
+                <p className="mt-2">IČ: 27502279</p>
+                <p>DIČ: CZ27502279</p>
               </div>
             </div>
 
@@ -71,7 +71,9 @@ export default function Footer() {
                 Odebírejte novinky o produktech a technologiích.
               </p>
               <div className="flex gap-2">
+                <label htmlFor="newsletter-email" className="sr-only">Váš e-mail pro odběr novinek</label>
                 <input
+                  id="newsletter-email"
                   type="email"
                   placeholder="Váš e-mail"
                   className="flex-1 bg-white border border-gray-200 rounded-[3px] px-3 py-2 text-[0.875rem] text-black placeholder:text-[#9ca3af] focus:border-[#0170E3] focus:outline-none transition-colors"

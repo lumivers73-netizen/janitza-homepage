@@ -50,36 +50,52 @@ export default function ContactSection() {
 
             <h3 className="text-[1.125rem] font-semibold mb-6">Žádost o radu s výběrem produktu</h3>
             <div className="space-y-4">
-              <input
-                type="text"
-                placeholder="Jméno"
-                value={form.name}
-                onChange={(e) => setForm({ ...form, name: e.target.value })}
-                className="w-full border border-gray-200 rounded-[3px] px-4 py-3 text-[0.875rem] focus:border-[#0170E3] focus:outline-none transition-colors"
-              />
-              <input
-                type="email"
-                placeholder="E-mail"
-                value={form.email}
-                onChange={(e) => setForm({ ...form, email: e.target.value })}
-                className="w-full border border-gray-200 rounded-[3px] px-4 py-3 text-[0.875rem] focus:border-[#0170E3] focus:outline-none transition-colors"
-              />
-              <input
-                type="tel"
-                placeholder="Telefon"
-                value={form.phone}
-                onChange={(e) => setForm({ ...form, phone: e.target.value })}
-                className="w-full border border-gray-200 rounded-[3px] px-4 py-3 text-[0.875rem] focus:border-[#0170E3] focus:outline-none transition-colors"
-              />
-              <textarea
-                placeholder="Vaše zpráva"
-                rows={4}
-                value={form.message}
-                onChange={(e) => setForm({ ...form, message: e.target.value })}
-                className="w-full border border-gray-200 rounded-[3px] px-4 py-3 text-[0.875rem] focus:border-[#0170E3] focus:outline-none transition-colors resize-none"
-              />
-              <label className="flex items-start gap-2 text-[0.75rem] text-[#5c5b5b]">
-                <input type="checkbox" className="mt-1" />
+              <div>
+                <label htmlFor="contact-name" className="sr-only">Jméno</label>
+                <input
+                  id="contact-name"
+                  type="text"
+                  placeholder="Jméno"
+                  value={form.name}
+                  onChange={(e) => setForm({ ...form, name: e.target.value })}
+                  className="w-full border border-gray-200 rounded-[3px] px-4 py-3 text-[0.875rem] focus:border-[#0170E3] focus:outline-none transition-colors"
+                />
+              </div>
+              <div>
+                <label htmlFor="contact-email" className="sr-only">E-mail</label>
+                <input
+                  id="contact-email"
+                  type="email"
+                  placeholder="E-mail"
+                  value={form.email}
+                  onChange={(e) => setForm({ ...form, email: e.target.value })}
+                  className="w-full border border-gray-200 rounded-[3px] px-4 py-3 text-[0.875rem] focus:border-[#0170E3] focus:outline-none transition-colors"
+                />
+              </div>
+              <div>
+                <label htmlFor="contact-phone" className="sr-only">Telefon</label>
+                <input
+                  id="contact-phone"
+                  type="tel"
+                  placeholder="Telefon"
+                  value={form.phone}
+                  onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                  className="w-full border border-gray-200 rounded-[3px] px-4 py-3 text-[0.875rem] focus:border-[#0170E3] focus:outline-none transition-colors"
+                />
+              </div>
+              <div>
+                <label htmlFor="contact-message" className="sr-only">Vaše zpráva</label>
+                <textarea
+                  id="contact-message"
+                  placeholder="Vaše zpráva"
+                  rows={4}
+                  value={form.message}
+                  onChange={(e) => setForm({ ...form, message: e.target.value })}
+                  className="w-full border border-gray-200 rounded-[3px] px-4 py-3 text-[0.875rem] focus:border-[#0170E3] focus:outline-none transition-colors resize-none"
+                />
+              </div>
+              <label htmlFor="contact-gdpr" className="flex items-start gap-2 text-[0.75rem] text-[#5c5b5b]">
+                <input id="contact-gdpr" type="checkbox" className="mt-1" />
                 Souhlasím se zpracováním osobních údajů dle GDPR
               </label>
               <button className="btn-primary w-full justify-center">
@@ -97,7 +113,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <p className="text-white font-semibold text-[0.875rem]">Janitza Asistent</p>
-                <p className="text-white/70 text-[0.6875rem]">Online · odpovídáme do minuty</p>
+                <p className="text-white/90 text-[0.6875rem]">Online · odpovídáme do minuty</p>
               </div>
             </div>
             <div className="flex-1 p-4 space-y-3 bg-[#f5f7f7] overflow-y-auto">
@@ -158,12 +174,14 @@ export default function ContactSection() {
             </div>
             {/* Input */}
             <div className="px-4 py-3 border-t border-gray-100 bg-white flex items-center gap-2">
+              <label htmlFor="chat-input" className="sr-only">Napište zprávu</label>
               <input
+                id="chat-input"
                 type="text"
                 placeholder="Napište zprávu..."
                 className="flex-1 text-[0.8125rem] outline-none bg-transparent text-black placeholder:text-[#9ca3af] border border-gray-200 rounded-[3px] px-3 py-2 focus:border-[#0170E3] transition-colors"
               />
-              <button className="w-8 h-8 rounded-[3px] bg-[#0170E3] hover:bg-[#0060C4] text-white flex items-center justify-center transition-colors flex-shrink-0">
+              <button aria-label="Odeslat zprávu" className="w-8 h-8 rounded-[3px] bg-[#0170E3] hover:bg-[#0060C4] text-white flex items-center justify-center transition-colors flex-shrink-0">
                 <IconArrowUp size={16} stroke={2} />
               </button>
             </div>

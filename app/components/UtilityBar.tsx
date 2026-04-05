@@ -48,8 +48,8 @@ export default function UtilityBar() {
           <a href="tel:+420777730002" className="text-white/80 hover:text-white transition-colors">
             +420 777 730 002
           </a>
-          <a href="mailto:info@kbh.cz" className="text-white/80 hover:text-white transition-colors">
-            info@kbh.cz
+          <a href="mailto:kbh@kbh.cz" className="text-white/80 hover:text-white transition-colors">
+            kbh@kbh.cz
           </a>
           <span className="text-white/30">|</span>
           <a href="#" className="text-white/80 hover:text-white transition-colors">
